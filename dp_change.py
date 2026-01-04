@@ -8,13 +8,6 @@ INF = 10**18
 
 
 def dp_change(coins: List[int], V: int) -> Tuple[int, List[int]]:
-    """
-    Returns:
-      (min_coin_count, coins_used_list)
-
-    Raises:
-      ValueError if V < 0 or coins invalid.
-    """
     if V < 0:
         raise ValueError("V must be non-negative.")
     if not coins:
